@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>RandomItems</title>
+        <link rel="stylesheet" href="demo.css" />
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+        
+        <script src="../src/randomitems.js"></script>
+        <script>
+            jQuery(document).ready(function($) {
+
+                $('#items').randomItems({
+                    minItems: 3
+                });
+            });
+        </script>
+    </head>
+    <body class="togglemenu-hover">
+        <div class="page">
+            <h1>Random Items</h1>
+
+            <ul id="items">
+                <li><img src="images/1.jpg" alt="" /></li>
+                <li><img src="images/2.jpg" alt="" /></li>
+                <li><img src="images/3.jpg" alt="" /></li>
+                <li><img src="images/4.jpg" alt="" /></li>
+                <li><img src="images/5.jpg" alt="" /></li>
+                <li><img src="images/6.jpg" alt="" /></li>
+                <li><img src="images/7.jpg" alt="" /></li>
+            </ul>
+        </div>
+    </body>
+</html>
