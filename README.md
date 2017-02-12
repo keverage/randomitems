@@ -1,6 +1,6 @@
-# Documentation Scroller
+# Documentation RandomItems
 
-Ce script permet d'afficher aléatoirement des éléments
+Ce script permet d'afficher aléatoirement des éléments.
 
 ## Initialisation
 
