@@ -4,15 +4,18 @@
         <meta charset="utf-8" />
         <title>RandomItems</title>
         <link rel="stylesheet" href="demo.css" />
-        
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
         
         <script src="../src/randomitems.js"></script>
         <script>
-            jQuery(document).ready(function($) {
+            jQuery(document).ready(function ($) {
 
-                $('#items').randomItems({
-                    minItems: 3
+                var randomItems = $('#items').randomItems({
+                    minItems: 3,
+                    onChange: function () {
+                        console.log(this);
+                    }
                 });
             });
         </script>
